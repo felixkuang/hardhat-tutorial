@@ -1,0 +1,27 @@
+{
+  "name": "hardhat-tutorial",
+  "version": "1.0.0",
+  "description": "hardhat tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixkuang/hardhat-tutorial.git"
+  },
+  "keywords": [
+    "hardhat",
+    "tutorial"
+  ],
+  "author": "felix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felixkuang/hardhat-tutorial/issues"
+  },
+  "homepage": "https://github.com/felixkuang/hardhat-tutorial#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.2"
+  }
+}
