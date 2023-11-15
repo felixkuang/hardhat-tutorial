@@ -7,7 +7,44 @@ const { INFURA_API_KEY, SEPOLIA_PRIVATE_KEY } = process.env;
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.19",
+  compilers: [
+    {
+      version: '0.6.6',
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 999999,
+        }
+      },
+    },
+    {
+      version: "0.5.16",
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 200,
+        },
+      },
+    },
+    {
+      version: "0.8.19",
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 200,
+        },
+      },
+    },
+    {
+      version: "0.8.20",
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 200,
+        },
+      },
+    }
+  ],
   defaultNetwork: "localhost",
   networks: {
     localhost: {
