@@ -3,6 +3,10 @@ const { expect } = require("chai");
 const { ethers, network } = require("hardhat");
 const { abi } = require("../artifacts/contracts/MyToken.sol/MyToken.json")
 
+// https://github.com/dragonfly-xyz/useful-solidity-patterns/tree/main/patterns/permit2
+// https://blog.uniswap.org/permit2-and-universal-router
+// https://eips.ethereum.org/EIPS/eip-2612
+
 function getTimestampInSeconds() {
     // returns current timestamp in seconds
     return Math.floor(Date.now() / 1000);
